@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="antialiased">
+      <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
         <Main />
         <NextScript />
       </body>
