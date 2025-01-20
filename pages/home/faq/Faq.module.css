@@ -1,0 +1,104 @@
+
+
+.faq_main{
+
+display: grid;
+place-items: center;
+background-color:#0A0A0A;
+
+}
+
+.faq_in{
+    width: calc(100% - 100px);
+    max-width: 1218px;
+    height: 610px;
+    /* background: #000; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_textDiv{
+/* background-color: brown; */
+width: 35%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: left;
+
+}
+
+.faq_heading{
+    font-family: Outfit;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 88.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+
+}
+
+.faq_pra{
+    font-family: Outfit;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:  #A7A7A7;
+
+    
+
+}
+
+.faq_outDiv{
+width: 65%;
+/* background: #6c1818; */
+display: grid;
+place-items: center;
+}
+
+.acc_outDiv{
+/* background-color: blueviolet; */
+width: 100%;
+}
+
+.acc_item{
+/* background-color: rgb(42, 52, 165); */
+margin: 20px 0px;
+border-radius: 10px;
+border: 1px solid;
+padding: 0px 10px;
+border: 1px solid #337A86 ;
+background: #A7A7A721;
+
+
+
+}
+
+.acc_head{
+height: 55px;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.26px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+}
+
+.acc_pra{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #A7A7A7;
+    
+}
