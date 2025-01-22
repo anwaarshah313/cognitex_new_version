@@ -175,12 +175,12 @@ text-decoration-skip-ink: none;
 
 .usecase_bannerImg{
     width: 327px;
-height: 327px;
+/* height: 327px; */
 gap: 0px;
 opacity: 0px;
 angle: -180 deg;
 /* background-color: brown; */
-border: 1px solid #7C7B7BCC ;
+/* border: 1px solid #7C7B7BCC ; */
 margin-bottom: 40px;
 
 }

@@ -73,7 +73,7 @@ export default function Usecase() {
                                 {inboundBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
                                         
-                                        <img className={style.usecase_bannerImg} src="" alt="banner" />
+                                        <img className={style.usecase_bannerImg} src="./images/inbound.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}
@@ -107,7 +107,7 @@ export default function Usecase() {
                                 {outboundBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
                                        
-                                       <img className={style.usecase_bannerImg} src="" alt="banner" />
+                                       <img className={style.usecase_bannerImg} src="./images/outbound.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}
@@ -140,7 +140,7 @@ export default function Usecase() {
                                 {voiceBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
 
-                                        <img className={style.usecase_bannerImg} src="" alt="banner" />
+                                        <img className={style.usecase_bannerImg} src="./images/converse.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}

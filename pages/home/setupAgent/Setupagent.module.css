@@ -129,7 +129,8 @@ height: 30px;
 
 .setupagent_cardDiscription{
     height: 80px;
-    margin: 20px 0px;
+    margin: 18px 0px;
+    margin-bottom: 0px;
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -142,9 +143,9 @@ height: 30px;
 
 .setupagent_cardImg{
     width: 250px;
-    height: 168px;
+    height: 210px;
     gap: 10px;
     opacity: 0px;
     
-    
+    /* background: #000; */
 }
