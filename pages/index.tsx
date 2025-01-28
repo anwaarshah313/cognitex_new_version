@@ -11,16 +11,24 @@ import Customers from "./home/customersSay/Customers";
 
 export default function Home() {
   return (
-   <div>
-    {/* <Link href="/about">about</Link> */}
-     <Hero_section/>
-     {/* <Democall/> */}
-     <Setupagent/>
-     <Features/>
-     <Usecase/>
-     <Customers/>
-     <Faq/>
-     <Homecontact/>
-   </div>
+    <div>
+    <Hero_section />
+    <Setupagent />
+    <div id="features">
+      <Features />
+    </div>
+    <div id="usecase">
+      <Usecase />
+    </div>
+    
+      <Customers />
+
+    <div id="faq">
+      <Faq />
+    </div>
+    <div id="contact">
+      <Homecontact />
+    </div>
+  </div>
   );
 }

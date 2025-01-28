@@ -184,15 +184,15 @@ const inboundBanner =[
 
 const outboundBanner =[
     {
-        banner_title: 'outbound Call',
-        banner_discription: 'Automate the management of inbound calls to improve customer experience and increase operational efficiency.'
+        banner_title: 'Outbound Call',
+        banner_discription: 'Proactively engage customers and drive business growth through automated management of outbound calls.'
     },
 ]
 
 const voiceBanner =[
     {
-        banner_title: 'voices ',
-        banner_discription: 'Automate the management of inbound calls to improve customer experience and increase operational efficiency.'
+        banner_title: 'Voice Agents',
+        banner_discription: 'Elevate user experience with AI-driven voice agents, enabling seamless voice interactions on your website.'
     },
 ]
 

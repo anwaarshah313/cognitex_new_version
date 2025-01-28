@@ -1,14 +1,12 @@
+.faq_main {
 
-
-.faq_main{
-
-display: grid;
-place-items: center;
-background-color:#0A0A0A;
+    display: grid;
+    place-items: center;
+    background-color: #0A0A0A;
 
 }
 
-.faq_in{
+.faq_in {
     width: calc(100% - 100px);
     max-width: 1218px;
     height: 610px;
@@ -17,17 +15,17 @@ background-color:#0A0A0A;
     justify-content: space-between;
 }
 
-.faq_textDiv{
-/* background-color: brown; */
-width: 35%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: left;
+.faq_textDiv {
+    /* background-color: brown; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 
 }
 
-.faq_heading{
+.faq_heading {
     font-family: Outfit;
     font-size: 70px;
     font-weight: 600;
@@ -35,11 +33,11 @@ align-items: left;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+
 
 }
 
-.faq_pra{
+.faq_pra {
     font-family: Outfit;
     font-size: 25px;
     font-weight: 400;
@@ -47,51 +45,51 @@ align-items: left;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color:  #A7A7A7;
-
-    
-
-}
-
-.faq_outDiv{
-width: 65%;
-/* background: #6c1818; */
-display: grid;
-place-items: center;
-}
-
-.acc_outDiv{
-/* background-color: blueviolet; */
-width: 100%;
-}
-
-.acc_item{
-/* background-color: rgb(42, 52, 165); */
-margin: 20px 0px;
-border-radius: 10px;
-border: 1px solid;
-padding: 0px 10px;
-border: 1px solid #337A86 ;
-background: #A7A7A721;
+    color: #A7A7A7;
 
 
 
 }
 
-.acc_head{
-height: 55px;
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 500;
-line-height: 29.26px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+.faq_outDiv {
+    width: 65%;
+    /* background: #6c1818; */
+    display: grid;
+    place-items: center;
+}
+
+.acc_outDiv {
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+.acc_item {
+    /* background-color: rgb(42, 52, 165); */
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 0px 10px;
+    border: 1px solid #337A86;
+    background: #A7A7A721;
+
 
 
 }
 
-.acc_pra{
+.acc_head {
+    /* height: 55px; */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+.acc_pra {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -100,5 +98,132 @@ text-decoration-skip-ink: none;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #A7A7A7;
-    
+
+}
+
+
+
+
+
+/* Styles for screens less than 1300px */
+@media (max-width: 1189px) {
+
+    .faq_in {
+        width: calc(100% - 50px);
+        max-width: 1218px;
+        height: 710px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .faq_textDiv {
+        /* background-color: brown; */
+        width: 100%;
+        align-items: center;
+        margin-bottom: 40px;
+
+    }
+
+
+    .faq_outDiv {
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* Styles for screens less than 800px */
+@media (max-width: 759px) {
+
+    .acc_head {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.38px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+
+
+    }
+
+    .acc_pra {
+        margin-top: 8px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+
+    }
+
+
+
+}
+
+
+
+
+/* Styles for screens less than 400px */
+@media (max-width: 449px) {
+    .faq_heading {
+        font-family: Outfit;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50.4px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+
+
+    }
+
+    .faq_pra {
+        font-family: Outfit;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .acc_head {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24.38px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+padding: 10px;
+
+
+    }
+
+    .acc_pra {
+        margin-top: 8px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding: 10px;
+
+
+    }
+
+
 }

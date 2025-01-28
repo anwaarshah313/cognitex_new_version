@@ -169,3 +169,134 @@ background: linear-gradient(92.6deg, #3D95A4 36.17%, #A0B9C1 72.35%);
     max-height: 760px;
     opacity: 40%;
 }
+
+
+
+
+
+
+
+/* Styles for screens less than 1300px */
+@media (max-width: 449px) {    
+   
+
+    .hero_inDiv {
+        width: calc(100% - 50px);
+
+    }
+    
+    
+    .hero_heading {
+    
+        font-family: 'Outfit', sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        /* background: #000; */
+    
+    }
+    
+    .hero_typeText{
+      background-color: blueviolet !important   ;
+     margin-top: 34px;
+     margin-bottom: 10px;
+
+      z-index: 99;
+      min-height: 55px;
+    height:100%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: linear-gradient(92.6deg, #3D95A4 36.17%, #A0B9C1 72.35%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+    }
+    
+    .hero_discription {
+        /* background: fuchsia; */
+        /* max-width: 800px; */
+    
+        color: #A7A7A7;
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+    }
+    
+    
+    .hero_btnDiv {
+        /* background-color: #000000; */
+        text-align: center;
+        display: flex;
+        gap: 18px;
+        margin-top: 24px;
+    }
+    
+    .hero_fillBtn {
+        padding: 5px 10px 5px 10px;
+        border-radius: 7px;
+        background:  #385D63 !important;
+        font-family: 'Outfit', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        width: 128px;
+        height: 40px;
+    
+    
+    }
+    
+    .hero_transBtn {
+        border: 1px solid  #385D63 !important;
+        padding: 5px 10px 5px 10px;
+        border-radius: 7px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    
+        width: 128px;
+        height: 40px;
+    
+    
+    }
+    
+    
+
+}
+
+
+
+
+/* Styles for screens less than 800px */
+@media (max-width: 800px) {
+
+}
+
+
+
+
+/* Styles for screens less than 400px */
+@media (max-width: 400px) {
+
+}
+
