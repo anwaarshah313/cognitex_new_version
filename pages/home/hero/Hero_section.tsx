@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import style from "./Hero.module.css";
 import Brand from "./brand/Brand";
+import Link from 'next/link';
 
 export default function HeroSection() {
   // Define the type for the phrases array
@@ -62,7 +63,8 @@ export default function HeroSection() {
               Create no-code AI phone call systems with our AI voice agents: never miss a call again and convert more leads
             </p>
             <div className={style.hero_btnDiv}>
-              <button className={style.hero_fillBtn}>Try demo</button>
+            <Link className={style.nav_btnLink} href="/demo">
+              <button className={style.hero_fillBtn}>Try demo</button> </Link>
               <button className={style.hero_transBtn}>Get Started</button>
             </div>
           </div>

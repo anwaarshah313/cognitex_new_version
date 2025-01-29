@@ -1,7 +1,6 @@
 .usecase_main {
     display: grid;
     place-items: center;
-    /* background-color: blueviolet; */
     padding: 20px 0px;
     position: relative;
 }
@@ -14,7 +13,6 @@
     height: 100%;
     gap: 72px;
     opacity: 0px;
-    /* background-color: burlywood; */
     display: grid;
     place-items: center;
 
@@ -23,11 +21,8 @@
 .usecase_textDiv {
     width: 100%;
     max-width: 820px;
-    /* height: 95px; */
     gap: 7px;
     opacity: 0px;
-    /* background: #bf3d3d; */
-
 
 }
 
@@ -78,8 +73,6 @@
 
 .usecase_tabList {
     width: 100%;
-
-    /* background: #ce0808; */
     height: 100%;
     margin-bottom: 80px;
 }
@@ -90,12 +83,9 @@
     width: 363px;
     height: 50px;
     padding: 7.5px 8px 10px 8px;
-
     border-radius: 7px;
     opacity: 0px;
-
     background: #CCC3C330;
-
 
 }
 
@@ -107,7 +97,6 @@
     border-radius: 5px;
     background: transparent;
     color: #A7A7A7;
-
     font-family: 'Outfit', sans-serif;
     font-size: 20px !important;
     font-weight: 400;
@@ -115,8 +104,6 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-
 
 }
 
@@ -127,9 +114,6 @@
 
 .usecase_bannerDiv {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* background-color: #3D95A4; */
     column-gap: 20px;
 }
 
@@ -143,8 +127,6 @@
     border: 1px;
     opacity: 0px;
     background: #A7A7A714;
-
-    /* background-color: blue; */
     border: 1px solid #7C7B7BCC;
 }
 
@@ -156,7 +138,6 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    /* background-color: #3D95A4; */
     margin-bottom: 20px;
 
 }
@@ -169,9 +150,6 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    /* background-color: rgb(161, 161, 39); */
-
-
 }
 
 .usecase_bannerImg {
@@ -180,14 +158,11 @@
     gap: 0px;
     opacity: 0px;
     angle: -180 deg;
-    /* background-color: brown; */
-    /* border: 1px solid #7C7B7BCC ; */
     margin-bottom: 40px;
 
 }
 
 .usecase_tabContentDiv {
-    /* background-color: #ce0808; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
@@ -206,13 +181,6 @@
     overflow: hidden;
     padding: 0px;
     flex-wrap: nowrap;
-
-
-
-    /* position: absolute; */
-    /* border-radius: 12px; */
-
-    /* background-color: cadetblue; */
     padding: 0px 14px;
     display: grid;
 
@@ -225,11 +193,7 @@
     background-size: cover;
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    /* padding: 20px 20px; */
-    /* gap: 12px; */
-    /* background-color: #aa3737; */
     margin-top: 10px;
     height: 66px;
 
@@ -243,7 +207,6 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    /* background: #000; */
     height: 66px;
 
 }
@@ -252,8 +215,6 @@
     width: 40px;
     height: 40px;
     font-size: 40px;
-    /* background-color: #A0B9C1; */
-
 }
 
 .usecase_tabCardPra {
@@ -292,7 +253,6 @@
         height: 100%;
         gap: 72px;
         opacity: 0px;
-        /* background-color: burlywood; */
         display: grid;
         place-items: center;
 
@@ -300,7 +260,6 @@
 
 
     .usecase_tabContentDiv {
-        /* background-color: #ce0808; */
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 20px;
@@ -326,9 +285,7 @@
     .usecase_bannerDiv {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
-        /* background-color: #3D95A4; */
         column-gap: 20px;
     }
 
@@ -343,13 +300,11 @@
         opacity: 0px;
         background: #A7A7A714;
         margin-bottom: 40px;
-        /* background-color: blue; */
         border: 1px solid #7C7B7BCC;
     }
 
 
     .usecase_tabList {
-
         margin-bottom: 40px;
     }
 
@@ -377,24 +332,20 @@
         width: 100%;
         height: 50px;
         padding: 7.5px 8px 10px 8px;
-
         border-radius: 7px;
         opacity: 0px;
-
         background: #CCC3C330;
 
 
     }
 
     .usecase_tabBtn {
-        /* width: 63px; */
         height: 35px;
         padding: 0px 5px 0px 5px !important;
         gap: 10px;
         border-radius: 5px;
         background: transparent;
         color: #A7A7A7;
-
         font-family: 'Outfit', sans-serif;
         font-size: 18px !important;
         font-weight: 400;
@@ -402,8 +353,6 @@
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
-
-        /* background: #000; */
 
     }
 
@@ -417,7 +366,6 @@
         opacity: 0px;
         background: #A7A7A714;
         margin-bottom: 40px;
-        /* background-color: blue; */
         border: 1px solid #7C7B7BCC;
     }
 

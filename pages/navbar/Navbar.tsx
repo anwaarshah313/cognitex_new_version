@@ -1,25 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useRouter, NextRouter } from 'next/router';
 
-export default function Navbar() {
-  const router = useRouter();
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeHash, setActiveHash] = useState('');
+interface Props {
+  // any props if needed
+}
 
-  const toggleMenu = () => {
+export default function Navbar(props: Props) {
+  const router: NextRouter = useRouter();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [activeHash, setActiveHash] = useState<string>('');
+
+  const toggleMenu = (): void => {
     setIsOpen(!isOpen);
   };
 
-  const updateActiveHash = (hash) => {
+  const updateActiveHash = (hash: string): void => {
     setActiveHash(hash);
-    window.location.hash = hash;  // This line ensures the URL hash is updated.
+    if (typeof window !== 'undefined') {
+      window.location.hash = hash;  // This line ensures the URL hash is updated.
+    }
   };
 
   useEffect(() => {
-    const handleRouteChange = () => {
-      setActiveHash(window.location.hash);
+    const handleRouteChange = (): void => {
+      if (typeof window !== 'undefined') {
+        setActiveHash(window.location.hash);
+      }
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -33,8 +41,8 @@ export default function Navbar() {
   return (
     <nav className={style.nav_main}>
       <div className={style.nav_in}>
-      <Link className={style.nav_logo} href="/">
-        <img className={style.nav_logo} src="./images/logo.png" alt="Logo" />
+        <Link className={style.nav_btnLink} href="/">
+          <img className={style.nav_logo} src="./images/logo.png" alt="Logo" />
         </Link>
         {/* Desktop Menu */}
         <ul className={style.nav_list}>
@@ -45,7 +53,7 @@ export default function Navbar() {
             <Link href="/#features">Features</Link>
           </li>
           <li className={`${style.nav_li} ${activeHash === '#faq' ? style.active : ''}`} onClick={() => updateActiveHash('#faq')}>
-            <Link href="/#faq">F&Q</Link>
+            <Link href="/#faq">FAQ</Link>
           </li>
           <li className={`${style.nav_li} ${activeHash === '#contact' ? style.active : ''}`} onClick={() => updateActiveHash('#contact')}>
             <Link href="/#contact">Contact</Link>
@@ -64,9 +72,9 @@ export default function Navbar() {
             </svg>
           )}
         </button>
-
-        <button className={style.nav_btn}>Try it now</button>
-
+        <Link className={style.nav_btnLink} href="/demo">
+          <button className={style.nav_btn}>Try it now</button>
+        </Link>
         {/* Mobile Menu */}
         {isOpen && (
           <div className={style.mobile_menu}>
@@ -78,14 +86,15 @@ export default function Navbar() {
                 <Link href="/#features">Features</Link>
               </li>
               <li className={`${style.mobile_li} ${activeHash === '#faq' ? style.active : ''}`} onClick={() => updateActiveHash('#faq')}>
-                <Link href="/#faq">F&Q</Link>
+                <Link href="/#faq">FAQ</Link>
               </li>
               <li className={`${style.mobile_li} ${activeHash === '#contact' ? style.active : ''}`} onClick={() => updateActiveHash('#contact')}>
                 <Link href="/#contact">Contact</Link>
               </li>
             </ul>
-            <button className={style.mobileNav_btn}>Try it now</button>
-
+            <Link className={style.nav_btnLink}  href="/demo">
+              <button className={style.mobileNav_btn}>Try it now</button>
+            </Link>
           </div>
         )}
       </div>

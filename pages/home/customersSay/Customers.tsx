@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
-import style from "./Customers.module.css"
+import style from "./Customers.module.css";
 
-export default function Customers() {
-    const reviews = [
+// Defining types for your review objects
+interface Review {
+    name: string;
+    username: string;
+    body: string;
+    img: string;
+}
+
+// Define the component as a functional component
+const Customers: React.FC = () => {
+    const reviews: Review[] = [
         {
             name: "Avi Shetty",
             username: "Tech Manager",
@@ -15,7 +24,6 @@ export default function Customers() {
             body: "The Team developed Website audit tool for us. They are very professional and delivered the project on time. I highly recommend them.",
             img: "./images/dummy_image.png",
         },
-      
         {
             name: "Thomas Fotteler",
             username: "Freelance Trader",
@@ -36,78 +44,73 @@ export default function Customers() {
         },
     ];
 
-    const [visibleStartIndex, setVisibleStartIndex] = useState(0);
+    const [visibleStartIndex, setVisibleStartIndex] = useState<number>(0);
 
-    const selectDiv = (index) => {
+    const selectDiv = (index: number) => {
         setVisibleStartIndex(index);
     };
 
     return (
         <>
-  <div className={style.customers_main + " " + style.desktop}>
+            <div className={`${style.customers_main} ${style.desktop}`}>
+                <div className={style.customers_in}>
+                    <div className={style.customers_textDiv}>
+                        <h1 className={style.customers_heading}>What Our <span className={style.customers_headingSpan}>Customers Say</span></h1>
+                        <p className={style.customers_pra}>Discover what our users say about the transformative impact of our tool.</p>
+                    </div>
 
-            <div className={style.customers_in}>
-
-                <div className={style.customers_textDiv}>
-                    <h1 className={style.customers_heading}>What Our <span className={style.customers_headingSpan}>Customers Say</span></h1>
-                    <p className={style.customers_pra}>Discover what our users say about the transformative impact of our tool.</p>
-                </div>
-
-                <div className={style.customers_carousel}>
-                    {reviews.slice(visibleStartIndex, visibleStartIndex + 3).map((review, index) => (
-                        <div key={index} className={`${style.customers_divContent} ${index === 0 ? style.customers_firstDiv : index === 2 ? style.customers_lastDiv : style.customers_middleDiv}`}>
-                            <div className={style.customers_imgOut}>
-                                <img src="./images/quote.svg" alt="" />
-                                <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersImage} />
+                    <div className={style.customers_carousel}>
+                        {reviews.slice(visibleStartIndex, visibleStartIndex + 3).map((review, index) => (
+                            <div key={index} className={`${style.customers_divContent} ${index === 0 ? style.customers_firstDiv : index === 2 ? style.customers_lastDiv : style.customers_middleDiv}`}>
+                                <div className={style.customers_imgOut}>
+                                    <img src="./images/quote.svg" alt="" />
+                                    <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersImage} />
+                                </div>
+                                <p className={style.customerBody}>{review.body}</p>
+                                <div className={style.customerName}>{review.name}</div>
+                                <div className={style.customerUsername}>{review.username}</div>
                             </div>
-                            <p className={style.customerBody}>{review.body}</p>
-                            <div className={style.customerName}>{review.name}</div>
-                            <div className={style.customerUsername}>{review.username}</div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
 
-                <div className={style.customers_dotDiv}>
-                    {Array.from({ length: reviews.length - 2 }).map((_, index) => (
-                        <span key={index} className={`${style.customers_dot} ${index === visibleStartIndex ? style.customers_activeDot : ''}`} onClick={() => selectDiv(index)}></span>
-                    ))}
+                    <div className={style.customers_dotDiv}>
+                        {Array.from({ length: reviews.length - 2 }).map((_, index) => (
+                            <span key={index} className={`${style.customers_dot} ${index === visibleStartIndex ? style.customers_activeDot : ''}`} onClick={() => selectDiv(index)}></span>
+                        ))}
+                    </div>
                 </div>
-
             </div>
-        </div>
 
+            <div className={`${style.customersMobile_main} ${style.customersMobile}`}>
+                <div className={style.customersMobile_in}>
+                    <div className={style.customers_textDiv}>
+                        <h1 className={style.customers_heading}>What Our <span className={style.customers_headingSpan}>Customers Say</span></h1>
+                        <p className={style.customers_pra}>Discover what our users say about the transformative impact of our tool.</p>
+                    </div>
 
-        <div className={style.customersMobile_main + " " + style.customersMobile}>
-<div className={style.customersMobile_in}>
+                    <div className={style.customersMobile_carousel}>
+                        {reviews.slice(visibleStartIndex, visibleStartIndex + 1).map((review, index) => (
+                            <div key={index} className={style.customersMobile_divContent}>
+                                <div className={style.customersMobile_imgOut}>
+                                    <img src="./images/quote.svg" alt="" />
+                                    <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersMobileImage} />
+                                </div>
+                                <p className={style.customerBody}>{review.body}</p>
+                                <div className={style.customerName}>{review.name}</div>
+                                <div className={style.customerUsername}>{review.username}</div>
+                            </div>
+                        ))}
+                    </div>
 
-    <div className={style.customers_textDiv}>
-        <h1 className={style.customers_heading}>What Our <span className={style.customers_headingSpan}>Customers Say</span></h1>
-        <p className={style.customers_pra}>Discover what our users say about the transformative impact of our tool.</p>
-    </div>
-
-    <div className={style.customersMobile_carousel}>
-        {reviews.slice(visibleStartIndex, visibleStartIndex + 1).map((review, index) => (
-            <div key={index} className={style.customersMobile_divContent}>
-                <div className={style.customersMobile_imgOut}>
-                    <img src="./images/quote.svg" alt="" />
-                    <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersMobileImage} />
+                    <div className={style.customersMobile_dotDiv}>
+                        {Array.from({ length: reviews.length }).map((_, index) => (
+                            <span key={index} className={`${style.customersMobile_dot} ${index === visibleStartIndex ? style.customersMobile_activeDot : ''}`} onClick={() => selectDiv(index)}></span>
+                        ))}
+                    </div>
                 </div>
-                <p className={style.customerBody}>{review.body}</p>
-                <div className={style.customerName}>{review.name}</div>
-                <div className={style.customerUsername}>{review.username}</div>
             </div>
-        ))}
-    </div>
-
-    <div className={style.customersMobile_dotDiv}>
-        {Array.from({ length: reviews.length - 0 }).map((_, index) => (
-            <span key={index} className={`${style.customersMobile_dot} ${index === visibleStartIndex ? style.customersMobile_activeDot : ''}`} onClick={() => selectDiv(index)}></span>
-        ))}
-    </div>
-
-</div>
-</div>
-
-</>
+        </>
     );
 }
+
+export default Customers;

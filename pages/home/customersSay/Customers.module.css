@@ -1,7 +1,6 @@
 .customers_main {
     display: grid;
     place-items: center;
-    /* background-color: blueviolet; */
     margin: 140px 0px;
     position: relative;
 }
@@ -13,7 +12,6 @@
     height: 681px;
     gap: 72px;
     opacity: 0px;
-    /* background-color: burlywood; */
     display: grid;
     place-items: center;
     margin-top: 30px;
@@ -30,13 +28,8 @@
 
 .customers_textDiv {
     width: 100%;
-    /* max-width: 820px; */
-    /* height: 95px; */
     gap: 7px;
     opacity: 0px;
-    /* background: #000; */
-
-
 
 }
 
@@ -89,7 +82,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: rgb(26, 85, 66); */
     width: 100%;
     height: 438px;
 
@@ -105,7 +97,6 @@
 }
 
 .customers_imgOut {
-    /* background: #000; */
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -116,10 +107,6 @@
     height: 86.06px;
     gap: 0px;
     opacity: 0px;
-    /* background-color: #A7A7A714;
-border-bottom-left-radius: 100px;
-scale: 1.1; */
-
 }
 
 
@@ -128,14 +115,9 @@ scale: 1.1; */
     width: 285px;
     height: 372px;
     padding: 30px;
-
-    /* background: red; */
-
-
 }
 
 .customers_middleDiv {
-    /* background: green; */
     width: 300px;
     height: 372px;
     padding: 30px;
@@ -192,7 +174,6 @@ scale: 1.1; */
     justify-content: center;
     padding: 10px 0;
     margin-top: -20px;
-    /* background: #000; */
     width: 100%;
 }
 
@@ -208,7 +189,6 @@ scale: 1.1; */
 
 .customers_activeDot {
     background-color: #ffffff;
-    /* Blue to indicate the active dot */
 }
 
 
@@ -240,7 +220,6 @@ scale: 1.1; */
 .customersMobile_main {
     display: grid;
     place-items: center;
-    /* background-color: blueviolet; */
     margin: 140px 0px;
     position: relative;
 }
@@ -252,7 +231,6 @@ scale: 1.1; */
     height: 681px;
     gap: 72px;
     opacity: 0px;
-    /* background-color: burlywood; */
     display: grid;
     place-items: center;
     margin-top: 30px;
@@ -271,22 +249,20 @@ scale: 1.1; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
-    /* background-color: rgb(26, 85, 66); */
     width: 100%;
     height: 438px;
 
 }
 
 .customersMobile_divContent {
-    /* background: #000; */
+
     background: #A7A7A714;
     border: 1px solid #337A86;
     border-radius: 12px;
     text-align: center;
     width: 100%;
     align-items: end;
-   max-width: 270px;
+    max-width: 270px;
     height: 372px;
     padding: 20px;
     margin-left: 2px;
@@ -297,7 +273,6 @@ scale: 1.1; */
 }
 
 .customersMobile_imgOut {
-    /* background: #9e2323; */
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -310,10 +285,6 @@ scale: 1.1; */
     height: 86.06px;
     gap: 0px;
     opacity: 0px;
-    /* background-color: #A7A7A714;
-border-bottom-left-radius: 100px;
-scale: 1.1; */
-
 }
 
 
@@ -328,8 +299,6 @@ scale: 1.1; */
     text-decoration-skip-ink: none;
     color: #88898B;
     margin-top: 20px;
-    /* width: 225px; */
-    /* background: #000; */
     height: 160px;
     gap: 0px;
     opacity: 0px;
@@ -379,7 +348,6 @@ scale: 1.1; */
 
 .customersMobile_activeDot {
     background-color: #ffffff;
-    /* Blue to indicate the active dot */
 }
 
 
@@ -409,13 +377,6 @@ scale: 1.1; */
         display: none;
     }
 }
-
-
-
-
-/* Styles for screens less than 800px */
-@media (max-width: 800px) {}
-
 
 
 

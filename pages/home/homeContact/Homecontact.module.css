@@ -1,5 +1,4 @@
 .homecontact_main {
-    /* background-color: aquamarine; */
     display: grid;
     place-items: center;
     padding: 140px 0px;
@@ -9,7 +8,6 @@
 .homecontact_in {
     width: calc(100% - 100px);
     max-width: 1212px;
-    /* height: 384px; */
     border-radius: 12px;
     background: linear-gradient(147.14deg, #385D63 -26.05%, #0B0E0F 105.75%);
     padding: 0px 40px;
@@ -20,9 +18,7 @@
 }
 
 .homecontact_textDiv {
-    /* background-color: rebeccapurple; */
     width: 556px;
-    /* height: 255px; */
     gap: 70px;
     opacity: 0px;
     padding-top: 0px;
@@ -30,7 +26,6 @@
 }
 
 .homecontact_heading {
-    /* background-color: #0d2f34; */
     font-family: Montserrat;
     font-size: 36px;
     font-weight: 600;
@@ -43,7 +38,6 @@
 }
 
 .homecontact_pra {
-    /* background-color: red; */
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 400;
@@ -77,7 +71,6 @@
 .homecontact_iconDiv {
     display: grid;
     place-items: center;
-    /* background-color: blue; */
     width: 284px;
     height: 284px;
     gap: 0px;
@@ -95,7 +88,6 @@
     .homecontact_in {
         width: calc(100% - 50px);
         max-width: 1212px;
-        /* height: 324px; */
         padding: 40px 10px !important;
     }
 
@@ -103,10 +95,8 @@
     .homecontact_textDiv {
         width: 100%;
         max-width: 456px;
-        /* height: 255px; */
         gap: 70px;
         opacity: 0px;
-        /* background: #000; */
         padding-top: 28px;
 
     }
@@ -141,7 +131,6 @@
     .homecontact_in {
         width: calc(100% - 50px);
         max-width: 1212px;
-        /* height: 580px; */
         padding: 0px 20px;
         display: flex;
         justify-content: center;
@@ -152,11 +141,6 @@
 
     .homecontact_textDiv {
         width: 100%;
-        /* max-width: 456px; */
-        /* height: 310px; */
-        /* gap: 70px; */
-        opacity: 0px;
-        /* background: #000; */
         padding-top: 28px;
         text-align: center;
     }
@@ -194,7 +178,6 @@
     .homecontact_in {
         width: calc(100% - 50px);
         max-width: 1212px;
-        /* height: 680px; */
         padding: 0px 20px;
         display: flex;
         justify-content: center;
@@ -203,29 +186,29 @@
     }
 
 
-    
-.homecontact_heading {
-    font-family: Montserrat;
-font-size: 36px;
-font-weight: 600;
-line-height: 43.88px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+
+    .homecontact_heading {
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 43.88px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
 
 
-}
+    }
 
-.homecontact_pra {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.5px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    
+    .homecontact_pra {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.5px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
 
-}
+
+    }
 
 }

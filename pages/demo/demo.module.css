@@ -1,0 +1,291 @@
+.demo_container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: #0b0e0f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo_radialImage {
+    position: absolute;
+    bottom: 0;
+    opacity: 100%;
+    z-index: 0;
+}
+
+.demo_nav_main {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.demo_nav_in {
+    width: calc(100% - 100px);
+    max-width: 1249px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    position: relative;
+}
+
+.demo_nav_logo {
+    width: 182px;
+    height: 36px;
+    z-index: 1200 !important;
+}
+
+.demo_nav_btnLink {
+    z-index: 2000;
+}
+
+.demo_nav_btn {
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    background: #385D63;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    color: white;
+    z-index: 2000;
+}
+
+
+
+
+.demo_mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin: 0px 20px;
+    mix-blend-mode: lighten !important;
+}
+
+.demo_title {
+    font-family: Outfit;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 63px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+.demo_pra {
+    font-family: Outfit;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 27.72px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.demoONe {
+    z-index: -1;
+    width: 34%;
+    opacity: 100%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+
+
+
+.demo_agentCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px !important;
+}
+
+.demo_card {
+    position: relative;
+    width: 188px;
+    height: 163px;
+    padding: 15px 30px 15px 30px;
+    gap: 10px;
+    border-radius: 8px;
+    background: #1f1f1f;
+    margin: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.demo_card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(to bottom, #337A86, #A7A7A7);
+    border-radius: 8px;
+    z-index: -1;
+}
+
+
+.demo_card img {
+    width: 100px;
+}
+
+.demo_card p {
+    font-family: Outfit;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.68px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    z-index: 5;
+}
+
+.blur {
+    filter: blur(6px);
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 324px;
+    height: 371px;
+    gap: 0px;
+    border-radius: 12px;
+    border: 1px solid #337A86;
+    opacity: 0px;
+    z-index: 10;
+    background: linear-gradient(161.2deg, #385D63 -53.27%, #0B0E0F 117.02%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframeStyle {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.closeButton {
+    font-size: 19px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 882px) {
+
+    .demo_mainContent {
+
+        margin: 180px 20px;
+        margin-bottom: 100px;
+    }
+
+    .demoONe {
+        z-index: -1;
+        width: 40%;
+        opacity: 50%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+}
+
+
+/* Styles for screens less than 400px */
+@media (max-width: 500px) {
+    .demo_nav_in {
+        width: calc(100% - 50px);
+
+    }
+
+    .demo_nav_logo {
+        width: 158px;
+        height: 32px;
+        z-index: 2000 !important;
+    }
+
+    .demo_nav_btn {
+        height: 40px;
+        padding: 5px 10px;
+        border-radius: 7px;
+        background: #385D63;
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        text-align: left;
+        color: white;
+        z-index: 2000 !important;
+    }
+
+
+    .demo_title {
+        font-family: Outfit;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+
+
+    }
+
+    .demo_pra {
+        font-family: Outfit;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    .demoONe {
+        z-index: -1;
+        width: 60%;
+        opacity: 50%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .demo_agentCards {
+        gap: 20px;
+    }
+
+}

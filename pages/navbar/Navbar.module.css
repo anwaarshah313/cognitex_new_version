@@ -4,26 +4,30 @@
     top: 40px;
     display: grid;
     place-items: center;
-    /* background: #000; */
+
 }
 
 .nav_in {
     width: calc(100% - 100px);
     max-width: 1249px;
     height: 40px;
-    /* top: 47px; */
-   
+
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     position: relative;
-    /* background-color: red; */
+
 }
 
 .nav_logo {
     width: 182px;
     height: 36px;
     z-index: 1100 !important;
+}
+
+.nav_btnLink {
+    z-index: 1000;
 }
 
 .nav_btn {
@@ -38,6 +42,7 @@
     line-height: 25.2px;
     text-align: left;
     color: white;
+    z-index: 1000;
 }
 
 .nav_list {
@@ -72,19 +77,20 @@
 
 /* Mobile Styles */
 .hamburger {
-    
+
     display: none;
     background: #385D63;
     border: none;
     cursor: pointer;
     z-index: 99;
     width: 34px;
-height: 30px;
-border-radius: 5px ;
+    height: 30px;
+    border-radius: 5px;
 
 }
 
-.mobileNav_btn{
+.mobileNav_btn {
+
     width: 106px;
     height: 40px;
     padding: 5px 10px;
@@ -109,8 +115,6 @@ border-radius: 5px ;
     right: 0;
     background: #CCC3C326;
     backdrop-filter: blur(20px);
-
-    /* margin-top: 10px; */
     padding: 16px;
     padding-top: 80px;
     border-radius: 7px;
@@ -136,7 +140,7 @@ border-radius: 5px ;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     width: 100%;
-    
+
 }
 
 /* Media Queries */
@@ -144,11 +148,12 @@ border-radius: 5px ;
 
     .nav_in {
         width: calc(100% - 50px);
-  
+
     }
+
     .nav_list {
         display: none;
-        
+
     }
 
     .nav_btn {
@@ -158,32 +163,38 @@ border-radius: 5px ;
     .hamburger {
         display: block;
         place-items: center;
+        margin-right: -42%;
         z-index: 1000;
     }
 
     .mobile_menu {
         display: block;
         place-items: center;
-       
-    }
-.nav_in{
-    padding: 0px 20px;
-}
-   
 
-    
+    }
+
+    .nav_in {
+        padding: 0px 20px;
+    }
+
+
+
 
 }
 
 
 @media (max-width: 449px) {
 
+    .nav_in {
+        width: calc(100% - 20px);
+
+    }
 
     .nav_logo {
         width: 150px;
-    height: 30px;
-    
-   
+        height: 30px;
+
+
     }
 
 }
