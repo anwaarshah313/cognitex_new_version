@@ -36,7 +36,7 @@ export default function DemoPage() {
                 <main className={style.demo_mainContent}>
                     <p className={style.demo_pra}>Get a free demo</p>
                     <h1 className={style.demo_title}>Experience with these Agents</h1>
-                    <img className={style.demoONe} src="./images/demo_wave_1.GIF" alt="" />
+                    <img className={style.demoONe} src="./images/demo_wave_1.gif" alt="" />
 
                     <div className={style.demo_agentCards}>
                         <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>

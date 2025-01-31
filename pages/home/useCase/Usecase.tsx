@@ -30,7 +30,7 @@ export default function Usecase() {
 
                     <div className={style.usecase_textDiv}>
                         <h1 className={style.usecase_heading}>Diverse  <span className={style.usecase_headingSpan}> Use Cases </span></h1>
-                        <p className={style.usecase_discription}>See how CongiVoice transforms customer interactions through intelligent call automation.
+                        <p className={style.usecase_discription}>See how CogniVoice transforms customer interactions through intelligent call automation.
                         </p>
                     </div>
 
@@ -201,7 +201,7 @@ const inbound = [
   
     {
         title: 'Food Ordering',
-        description: 'CongiVoice simplifies food ordering with fast, accurate, and 24/7 automation.',
+        description: 'CogniVoice simplifies food ordering with fast, accurate, and 24/7 automation.',
         icon: <FaPizzaSlice />,
     },
     {
@@ -235,7 +235,7 @@ const inbound = [
 const outbound = [
     {
         title: 'Medicare Telemarketing Calls',
-        description: 'CongiVoice educates seniors about Medicare options with automated calls.',
+        description: 'CogniVoice educates seniors about Medicare options with automated calls.',
         icon: <FaPhone />,
     },
     {

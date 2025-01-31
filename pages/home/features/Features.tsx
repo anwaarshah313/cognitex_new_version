@@ -51,7 +51,7 @@ export default function Features() {
                         <div className={style.feature_card}>
                             <div className={style.feature_cardIconDiv}> <div className={style.feature_cardIcon}><img src="./images/Multilingual.svg" alt="" /></div></div>
                             <h2 className={style.feature_cardHeading}>Multilingual</h2>
-                            <p className={style.feature_cardDiscription}>Personalized interactions that boost engagemen</p>
+                            <p className={style.feature_cardDiscription}>Personalized interactions that boost engagement.</p>
                         </div>
 
 
