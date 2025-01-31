@@ -39,19 +39,23 @@ export default function DemoPage() {
                 <img className={style.demoONe} src="./images/demo_wave_1.GIF" alt="" />
 
                 <div className={style.demo_agentCards}>
-                    <div className={style.demo_card} onClick={() => handleCardClick('https://example.com/food')}>
+                <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
+                        <img src="./images/cognitex.png" alt="Cognitex" />
+                        <p>Cognitex</p>
+                    </div>
+                    <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
                         <img src="./images/food_order.png" alt="Food Ordering" />
                         <p>Food Ordering</p>
                     </div>
-                    <div className={style.demo_card} onClick={() => handleCardClick('https://example.com/order')}>
+                    <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
                         <img src="./images/order_track.png" alt="Order Tracking" />
                         <p>Order Tracking</p>
                     </div>
-                    <div className={style.demo_card} onClick={() => handleCardClick('https://example.com/appointment')}>
+                    <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
                         <img src="./images/appointment.png" alt="Appointment" />
                         <p>Appointment</p>
                     </div>
-                    <div className={style.demo_card} onClick={() => handleCardClick('https://example.com/ride')}>
+                    <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
                         <img src="./images/ride_book.png" alt="Ride Booking" />
                         <p>Ride Booking</p>
                     </div>
@@ -63,7 +67,7 @@ export default function DemoPage() {
             {showPopup && (
                 <div className={style.popup}>
                     <button className={style.closeButton} onClick={handleClosePopup}>X</button>
-                    <iframe src={iframeSrc} className={style.iframeStyle}></iframe>
+                    <iframe src={iframeSrc} allow="microphone" className={style.iframeStyle}></iframe>
                 </div>
             )}
             </>
