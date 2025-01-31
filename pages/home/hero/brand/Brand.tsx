@@ -31,9 +31,9 @@ export default function Brand() {
 }
 
 const brandLogos = [
-  "/images/logo-one.PNG",
-  "/images/logo-two.PNG",
-    "/images/logo-three.PNG",
-    // "/images/logo-four.PNG",
+  "/images/logo-one.png",
+  "/images/logo-two.png",
+    "/images/logo-three.png",
+    // "/images/logo-four.png",
   
 ];

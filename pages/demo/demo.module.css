@@ -130,6 +130,10 @@
     align-items: center;
 
 }
+.demo_agentCards :hover{
+    cursor: pointer;
+    /* background: #000; */
+}
 
 .demo_card::before {
     content: '';
