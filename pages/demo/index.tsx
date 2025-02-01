@@ -3,10 +3,10 @@ import style from './demo.module.css';
 import Link from 'next/link';
 
 export default function DemoPage() {
-    const [showPopup, setShowPopup] = useState(false);
-    const [iframeSrc, setIframeSrc] = useState('');
+    const [showPopup, setShowPopup] = useState<boolean>(false);
+    const [iframeSrc, setIframeSrc] = useState<string>('');
 
-    const handleCardClick = (src) => {
+    const handleCardClick = (src: string) => {
         setIframeSrc(src);
         setShowPopup(true);
     };
@@ -17,7 +17,7 @@ export default function DemoPage() {
 
     return (
         <>
-            <div className={`${style.demo_container} ${showPopup && style.blur}`}>
+            <div className={`${style.demo_container} ${showPopup ? style.blur : ''}`}>
                 {showPopup && <div className={style.backdrop} onClick={handleClosePopup}></div>}
 
                 <img className={style.demo_radialImage} src="./images/radial.svg" alt="" />
@@ -41,28 +41,26 @@ export default function DemoPage() {
                     <div className={style.demo_agentCards}>
                         <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
                             <img src="./images/cognitex.png" alt="Cognitex" />
-                            <p>Cognitex</p>
+                            <p>Receptionist</p>
                         </div>
-                        <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
+                        <div className={style.demo_card} onClick={() => handleCardClick('https://telepizza-ochre.vercel.app/')}>
                             <img src="./images/food_order.png" alt="Food Ordering" />
                             <p>Food Ordering</p>
                         </div>
-                        <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
+                        <div className={style.demo_card} onClick={() => handleCardClick('https://customersupport-eta.vercel.app/')}>
                             <img src="./images/order_track.png" alt="Order Tracking" />
-                            <p>Order Tracking</p>
+                            <p>Help Desk</p>
                         </div>
-                        <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
+                        <div className={style.demo_card} onClick={() => handleCardClick('https://healwell-ten.vercel.app/')}>
                             <img src="./images/appointment.png" alt="Appointment" />
                             <p>Appointment</p>
                         </div>
-                        <div className={style.demo_card} onClick={() => handleCardClick('https://goag.vercel.app/')}>
+                        <div className={style.demo_card} onClick={() => handleCardClick('https://ridebooking.vercel.app/')}>
                             <img src="./images/ride_book.png" alt="Ride Booking" />
                             <p>Ride Booking</p>
                         </div>
-
                     </div>
                 </main>
-
             </div>
             {showPopup && (
                 <div className={style.popup}>
@@ -73,6 +71,3 @@ export default function DemoPage() {
         </>
     );
 }
-
-
-

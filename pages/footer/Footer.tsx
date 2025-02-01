@@ -11,12 +11,12 @@ export default function Footer() {
                     <div className={style.footer_topDiv}>
                         <img className={style.footer_logo} src="./images/logo.png" alt="" />
                         <div className={style.footer_iconDiv}>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
+                        <a href="https://www.linkedin.com/company/cognitexai" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
                             <FaLinkedin className={style.footer_icon} />
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
+                        {/* <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
                             <FaInstagram className={style.footer_icon} />
-                        </a>
+                        </a> */}
                         <a href="mailto:cognitex.ai@gmail.com" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
                             <FaEnvelope className={style.footer_icon} />
                         </a>
