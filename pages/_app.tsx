@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
+import SticyIcon from "./sticyicon";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {showNavbarAndFooter && <Navbar />}
       <Component {...pageProps} />
       {showNavbarAndFooter && <Footer />}
+      <SticyIcon/>
     </>
   );
 }
