@@ -3,6 +3,7 @@ import style from "./Hero.module.css";
 import Brand from "./brand/Brand";
 import Link from 'next/link';
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 export default function HeroSection() {
   const phrases: string[] = ["cold calling", "customer support", "real estate"];
@@ -103,7 +104,7 @@ export default function HeroSection() {
         {showPopup && <div className={style.backdrop}></div>}
         <div className={style.hero_elementDivOne}></div>
         <div className={style.hero_elementDivTwo}></div>
-        <img className={style.hero_animation} src="./images/herogif.gif" alt="" />
+        <Image width={100} height={100} className={style.hero_animation} src="/images/herogif.gif" alt="" />
         <div className={style.hero_inDiv}>
           <div className={style.hero_textDiv}>
             <h1 className={style.hero_heading}>AI voice agents for</h1>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import style from './Navbar.module.css';
 import Link from 'next/link';
 import { useRouter, NextRouter } from 'next/router';
-
+import Image from "next/image";
 interface Props {
   // any props if needed
 }
@@ -42,7 +42,7 @@ export default function Navbar(props: Props) {
     <nav className={style.nav_main}>
       <div className={style.nav_in}>
         <Link className={style.nav_btnLink} href="/">
-          <img className={style.nav_logo} src="./images/logo.png" alt="Logo" />
+          <Image width={1000} height={1000} className={style.nav_logo} src="/images/logo.png" alt="Logo" />
         </Link>
         {/* Desktop Menu */}
         <ul className={style.nav_list}>

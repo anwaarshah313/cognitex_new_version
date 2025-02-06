@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageCircle, Phone, Send, X } from 'lucide-react';
+import { 
+    // MessageCircle,
+     Phone, Send, X } from 'lucide-react';
 import style from './SticyIconi.module.css';
 
 const SticyIcon = () => {

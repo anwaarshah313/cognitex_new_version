@@ -1,6 +1,7 @@
 
 import Marquee from "@/components/ui/marquee";
 import style from "./Brand.module.css"
+import Image from "next/image";
 export default function Brand() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function Brand() {
           <div className={style.brand_main}>
             <Marquee pauseOnHover className="[--duration:20s]">
               {brandLogos.map((logo, index) => (
-                <img
+                <Image width={280} height={200}
                   key={index}
                   src={logo}
                   alt={`Brand logo ${index}`}

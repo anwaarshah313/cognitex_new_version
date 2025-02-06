@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./Demo.module.css"
-
+import Image from "next/image";
 
 export default function Democall() {
   return (
@@ -8,7 +8,7 @@ export default function Democall() {
    
 <div className={style.democall_main}>
   <div className={style.democall_in}>
-    <img className={style.democall_animation} src="./images/wavegif.gif" alt="" />
+    <Image width={100} height={100}  className={style.democall_animation} src="./images/wavegif.gif" alt="" />
 
   hello
   </div>

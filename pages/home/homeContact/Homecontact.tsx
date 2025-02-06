@@ -1,7 +1,7 @@
 import React, { useState , ChangeEvent, FormEvent } from "react";
 import style from "./Homecontact.module.css";
 import emailjs from "@emailjs/browser";
-
+import Image from "next/image";
 export default function Homecontact() {
   const [showPopup, setShowPopup] = useState<boolean>(false);
   const [formData, setFormData] = useState({
@@ -73,7 +73,7 @@ export default function Homecontact() {
             </button>
           </div>
           <div className={style.homecontact_iconDiv}>
-            <img src="./images/audio_line.svg" alt="" />
+            <Image width={1000} height={1000} src="/images/audio_line.svg" alt="" />
           </div>
         </div>
       </div>

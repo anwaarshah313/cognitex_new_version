@@ -15,7 +15,7 @@ export default function Faq() {
                 <div className={style.faq_in}>
 
                     <div className={style.faq_textDiv}>
-                        <h1 className={style.faq_heading}>FAQ's</h1>
+                        <h1 className={style.faq_heading}>FAQ&apos;s</h1>
                         <p className={style.faq_pra}> Everything You Need to Know</p>
                     </div>
 

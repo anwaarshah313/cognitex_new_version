@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import style from "./Customers.module.css";
-
+import Image from "next/image";
 // Defining types for your review objects
 interface Review {
     name: string;
@@ -16,31 +16,31 @@ const Customers: React.FC = () => {
             name: "Avi Shetty",
             username: "Tech Manager",
             body: "Experience was awesome. Understood the requirements, delivered it on time. Also helped us deploy his module into our own code base. It was a breeze working with him.",
-            img: "./images/dummy_image.png",
+            img: "/images/dummy_image.png",
         },
         {
             name: "Charlie Brooker",
             username: "CEO Digimax Dental",
             body: "The Team developed Website audit tool for us. They are very professional and delivered the project on time. I highly recommend them.",
-            img: "./images/dummy_image.png",
+            img: "/images/dummy_image.png",
         },
         {
             name: "Thomas Fotteler",
             username: "Freelance Trader",
             body: "The Team is an expert in C#. They can solve problems and can think by themself. I highly recommend him and will hire him again. Thank you for you help. Great work! ",
-            img: "./images/dummy_image.png",
+            img: "/images/dummy_image.png",
         },
         {
             name: "Amr Aboeleneen",
             username: "Research at Qatar University",
             body: "Smart and Excellent freelancer. Finished My task fast !",
-            img: "./images/dummy_image.png",
+            img: "/images/dummy_image.png",
         },
         {
             name: "Ryan Stewart",
             username: "Consultant Physician | MBBS Doctor",
             body: "We are developing Exam Prep Bot with Cognitex. The work is still under progress. They are passionate to work.",
-            img: "./images/dummy_image.png",
+            img: "/images/dummy_image.png",
         },
     ];
 
@@ -63,8 +63,8 @@ const Customers: React.FC = () => {
                         {reviews.slice(visibleStartIndex, visibleStartIndex + 3).map((review, index) => (
                             <div key={index} className={`${style.customers_divContent} ${index === 0 ? style.customers_firstDiv : index === 2 ? style.customers_lastDiv : style.customers_middleDiv}`}>
                                 <div className={style.customers_imgOut}>
-                                    <img src="./images/quote.svg" alt="" />
-                                    <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersImage} />
+                                    <Image width={40} height={40} src="/images/quote.svg" alt="" />
+                                    <Image width={100} height={100} src={review.img} alt={`${review.name}'s testimonial`} className={style.customersImage} />
                                 </div>
                                 <p className={style.customerBody}>{review.body}</p>
                                 <div className={style.customerName}>{review.name}</div>
@@ -92,8 +92,8 @@ const Customers: React.FC = () => {
                         {reviews.slice(visibleStartIndex, visibleStartIndex + 1).map((review, index) => (
                             <div key={index} className={style.customersMobile_divContent}>
                                 <div className={style.customersMobile_imgOut}>
-                                    <img src="./images/quote.svg" alt="" />
-                                    <img src={review.img} alt={`${review.name}'s testimonial`} className={style.customersMobileImage} />
+                                    <Image width={40} height={40} src="/images/quote.svg" alt="" />
+                                    <Image width={100} height={100} src={review.img} alt={`${review.name}'s testimonial`} className={style.customersMobileImage} />
                                 </div>
                                 <p className={style.customerBody}>{review.body}</p>
                                 <div className={style.customerName}>{review.name}</div>

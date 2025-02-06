@@ -1,6 +1,9 @@
 import React from 'react'
 import style from "./Footer.module.css"
-import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, 
+    // FaInstagram,
+     FaEnvelope } from "react-icons/fa";
+     import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -9,7 +12,7 @@ export default function Footer() {
                 <div className={style.footer_in}>
 
                     <div className={style.footer_topDiv}>
-                        <img className={style.footer_logo} src="./images/logo.png" alt="" />
+                        <Image width={800} height={100} className={style.footer_logo} src="/images/logo.png" alt="" />
                         <div className={style.footer_iconDiv}>
                         <a href="https://www.linkedin.com/company/cognitexai" target="_blank" rel="noopener noreferrer" className={style.footer_iconA}>
                             <FaLinkedin className={style.footer_icon} />

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
-    FaDollarSign, FaExpand, FaChartBar, FaHeadset, FaCommentDots, FaFlask, FaPizzaSlice, FaCalendarCheck, FaTaxi, FaBox, FaInfoCircle,
+    // FaDollarSign, FaExpand, FaChartBar,  FaCommentDots, FaFlask,
+    FaHeadset, FaPizzaSlice, FaCalendarCheck, FaTaxi, FaBox, FaInfoCircle,
     FaPhone, FaClipboardList, FaRegMoneyBillAlt, FaTags, FaUsers, FaComments,
     FaHeart,
     FaRobot,
@@ -14,7 +15,7 @@ import {
     TabsTrigger,
 
 } from "@/components/ui/tabs"
-
+import Image from "next/image";
 import style from "./Usecase.module.css"
 
 export default function Usecase() {
@@ -73,7 +74,7 @@ export default function Usecase() {
                                 {inboundBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
                                         
-                                        <img className={style.usecase_bannerImg} src="./images/inbound.png" alt="banner" />
+                                        <Image width={800} height={100} className={style.usecase_bannerImg} src="/images/inbound.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}
@@ -107,7 +108,7 @@ export default function Usecase() {
                                 {outboundBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
                                        
-                                       <img className={style.usecase_bannerImg} src="./images/outbound.png" alt="banner" />
+                                       <Image width={800} height={100} className={style.usecase_bannerImg} src="/images/outbound.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}
@@ -140,7 +141,7 @@ export default function Usecase() {
                                 {voiceBanner.map((card, index) => (
                                     <div key={index} className={style.usecase_banner}>
 
-                                        <img className={style.usecase_bannerImg} src="./images/converse.png" alt="banner" />
+                                        <Image width={800} height={100} className={style.usecase_bannerImg} src="/images/converse.png" alt="banner" />
                                         <h1 className={style.usecase_bannerHeading}>
 
                                         {card.banner_title}
