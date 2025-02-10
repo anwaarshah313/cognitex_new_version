@@ -28,8 +28,8 @@ export default function DemoPage() {
                         <Link href="/">
                             <Image width={800} height={100}  className={style.demo_nav_logo} src="/images/logo.png" alt="Logo" />
                         </Link>
-                        <Link href="/">
-                            <button className={style.demo_nav_btn}>Back to Home</button>
+                        <Link href="https://cognitex-dashboard-swart.vercel.app/">
+                            <button className={style.demo_nav_btn}>Login</button>
                         </Link>
                     </div>
                 </nav>
