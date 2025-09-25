@@ -6,7 +6,14 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const phrases: string[] = ["cold calling", "customer support", "real estate"];
+ 
+
+  const phrases = useMemo(() => ["cold calling", "customer support", "real estate"], []);
+
+useEffect(() => {
+  // use phrases
+}, [phrases]);
+
 
   const [currentPhrase, setCurrentPhrase] = useState<string>("");
   const [phraseIndex, setPhraseIndex] = useState<number>(0);
