@@ -3,11 +3,9 @@ import style from './Navbar.module.css';
 import Link from 'next/link';
 import { useRouter, NextRouter } from 'next/router';
 import Image from "next/image";
-interface Props {
-  // any props if needed
-}
 
-export default function Navbar(props: Props) {
+
+export default function Navbar() {
   const router: NextRouter = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [activeHash, setActiveHash] = useState<string>('');
