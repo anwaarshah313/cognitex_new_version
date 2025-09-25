@@ -32,7 +32,7 @@ export default function Faq() {
                             <AccordionItem className={style.acc_item} value="item-2">
                                 <AccordionTrigger className={style.acc_head}>Can I customize the Voice Calling Bots?</AccordionTrigger>
                                 <AccordionContent className={style.acc_pra}>
-                                    Yes, our bots are highly customizable to match your brand's voice, conversation flow, and specific operational requirements.
+                                    Yes, our bots are highly customizable to match your brand&apos;s voice, conversation flow, and specific operational requirements.
                                 </AccordionContent>
                             </AccordionItem>
                            
