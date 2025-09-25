@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import { useState, useEffect, useMemo, ChangeEvent, FormEvent } from "react";
 import style from "./Hero.module.css";
 import Brand from "./brand/Brand";
 import Link from 'next/link';
